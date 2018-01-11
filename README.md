@@ -1,4 +1,6 @@
 # Exception-Handling-in-Spring-MVC
+see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+
 1.First Step
 
 	@ResponseBody
@@ -19,6 +21,7 @@
 	}	
 	
 2.Step Two
-  public class ExceptionNotFound  extends RuntimeException   {
-    private static final long serialVersionUID = -4123180079950070796L;
-  }
+
+	 public class ExceptionNotFound  extends RuntimeException   {
+	    private static final long serialVersionUID = -4123180079950070796L;
+	 }
