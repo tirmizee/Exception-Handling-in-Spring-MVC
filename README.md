@@ -5,6 +5,7 @@ see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
 
 	 public class ExceptionNotFound  extends RuntimeException   {
 	    private static final long serialVersionUID = -4123180079950070796L;
+	    //...
 	 }
 2.Step Two
 
@@ -22,7 +23,7 @@ see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
 	@ResponseBody
 	@ExceptionHandler(ExceptionNotFound.class)
 	public ResponseEntity<String> handleEmployeeNotFoundException(HttpServletRequest request, Exception ex){
-	    return new ResponseEntity<String>("Hello : ",  HttpStatus.CREATED);
+	    return new ResponseEntity<String>("error ",  HttpStatus.CREATED);
 	}	
 	
 
