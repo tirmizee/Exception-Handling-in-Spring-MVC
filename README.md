@@ -1,7 +1,11 @@
 # Exception-Handling-in-Spring-MVC
 see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+2.First Step
 
-1.First Step
+	 public class ExceptionNotFound  extends RuntimeException   {
+	    private static final long serialVersionUID = -4123180079950070796L;
+	 }
+1.Step Two
 
 	@ResponseBody
 	@RequestMapping(value = "/delete/{id}" , method = RequestMethod.GET, headers = "Accept=application/json")
@@ -20,8 +24,4 @@ see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
 	    return new ResponseEntity<String>("Hello : ",  HttpStatus.CREATED);
 	}	
 	
-2.Step Two
 
-	 public class ExceptionNotFound  extends RuntimeException   {
-	    private static final long serialVersionUID = -4123180079950070796L;
-	 }
