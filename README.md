@@ -1,5 +1,6 @@
 # Exception-Handling-in-Spring-MVC
 see : https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+
 1.First Step
 
 	 public class ExceptionNotFound  extends RuntimeException   {
